@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Post from "./Post";
 import NewPost from "./NewPost";
+import axios from "axios";
 
 const Feed = () => {
   // Un-comment the lines below to complete your solution
@@ -18,7 +19,7 @@ const Feed = () => {
   useEffect(() => {
     getPostsData();
    }, [])
-
+   console.log(data);
   // ====================
 
   return (
